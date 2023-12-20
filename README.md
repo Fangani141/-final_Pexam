@@ -47,43 +47,39 @@
 ## 2.2用例規約說明
 
 表2-1 "進入停車場"用例規約
-| 用例名稱 | 進入停車場 |
-| :--- | :--- |
-| 用例id | P1 |
-| 參與者 | 車主 |
-| 用例說明 | 車主進入停車場 |
-| 前置條件 | 車主驅車到檔車器前 |
-| 主要件流 | 1. 車主驅車到檔車器前，用例開始 <br />2. 系統動識別車牌號，紀錄車牌號與進入停車場的時間 <br /> 3. 紀錄完成，檔車器放行<br /> 4. 車主驅車進入停車場|
-| 異常事件流 | 無法識別車牌號 |
-| 後置條件 | 車輛信息紀錄成功 |
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b3bec189-6759-4835-ad99-2d9672dcad89)
 
-表2-1 "進入停車場"用例規約a
 
-| 用例名稱 | 進入停車場 |
-| :--- | :--- |
-| 異常事件流 | 車主驅車到檔車器前，系統無法識別車牌號 |
-|| 1. 車主驅車到檔車器前，用例開始 <br /> 2. 導入車輛信息 <br />3. 紀錄完成，檔車器放行<br />4. 車主驅車進入停車場|
-| 後置條件 | 車輛信息記錄成功 |
+表2-2 "進入停車場"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aba58e87-4a1b-48b2-b5a8-c72efd2da4e7)
+
 
 表2-3 "支付費用"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/38c6dce9-8046-4c70-9e49-4e734fe4cee7)
 
 
 表2-4 "離開停車場"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/144a6fff-ee7c-4331-bfec-3b933247d3d6)
 
 
 表2-5 "登陸"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/88bd0bd2-b3dd-4cd5-904f-85c6a85e15a4)
 
 
 表2-6 "查看車輛信息"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/ac305945-b7bb-45c5-ad76-14412f4090e1)
 
 
 表2-7 "查詢車輛信息"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/42c364a7-7db9-4c7a-8699-5db09793a9b9)
 
 
 表2-8 "導入車輛信息"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/1cc4e714-6e35-4f6a-b994-71ef5835ca0e)
 
 
 表2-9 "刪除車輛信息"用例規約
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b20fce7c-d261-4dbf-b4fe-59a8658bc947)
 
 # 第三章 面向對象分析
 
@@ -110,10 +106,12 @@
 ## 4.1數據庫設計
 數據庫結構
 1. 車輛信息表
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b805f92e-2982-40bf-8961-67f962bc2f6d)
 
   表3.5車輛信息表
 
 2. 管理員信息表
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b09ad690-ca17-4e2c-9ba9-875d41701b20)
 
   表4.1管理員信息表
 
@@ -155,22 +153,30 @@ lookCar() - 查看車輛信息。
 
 ## 4.4 交互介面設計
   1.登陸logOn.java
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/5ba703bd-afad-4051-8f8e-944215806164)
 
   圖4-1登陸介面設計
 
   2.車輛信息管理mainWindows.java
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/97448ed9-d324-43c3-a164-c600c78983e0)
 
   圖4-2車輛信息管理介面設計
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/51fca567-cdd1-4fc9-a273-4a8f75a6a8f5)
 
   圖4-3瀏覽車輛信息
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/c0e98d58-5189-4fce-8e7e-8690b2654bef)
 
   圖4-4添加車輛信息
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/df1a0082-17a1-4832-a900-6dc6d1e34837)
 
   圖4-5添加出庫車輛信息
+  
   6. 刪除車輛信息DelCar.java
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/fbc52907-a134-454e-a98b-4fb93a36624f)
 
   圖4-6刪除車輛信息
   7.查詢車輛信息findCar.java
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/64a8813b-821d-43be-a05d-5375ea937ef9)
 
   圖4-7查詢車輛信息
 
@@ -178,6 +184,7 @@ lookCar() - 查看車輛信息。
 
 ## 5.1停車場信息管理系統編碼實現
 本系統基於Java+MySQL+ swing
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/84f40a14-5db8-4355-a35d-8bc06ee2e8db)
 
 # 第六章 軟建測試與部屬
 ## 6.1軟建測試
@@ -199,14 +206,20 @@ lookCar() - 查看車輛信息。
 ## 6.4 用例測試
 
 ### 6.4.1 登錄用例測試
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/8a8badb2-fa8b-405e-98b6-8ad473e782fb)
+
 
 ### 6.4.2添加信息用例測試
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/90801287-0f1a-466d-9f50-d639837ccc03)
 
 ### 6.4.3查詢信息用例測試
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/13ba07c5-29d5-43f9-a752-368df319ba77)
 
 ### 6.4.4瀏覽信息用例測試
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/d7cb3176-9fef-4d71-8d25-b77dfd03455c)
 
 ### 6.4.5刪除信息用例測試
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/af857ed5-de54-481e-8992-badbce9520ce)
 
 # 6.5本章小節
 本章捷主要介紹了對停車場管理系統進行功能測試的必要性和測試結果，針對當前停車管理系統設系了一系列的功能測試用例。通過系統測試使系統更能府和預期要求，並能檢測和修復一些開發過程中的bug。
