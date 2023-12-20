@@ -17,14 +17,19 @@
 
 ### 1.3.1 業務模型 
 <br />
+
 ![IMAGE](https://github.com/Fangani141/-final_Pexam/blob/main/other/%E6%A5%AD%E5%8B%99%E7%AE%A1%E7%90%86.drawio.png)
 
 ### 1.3.2 車主業務活動圖
 <br />
+
 ![車主業務 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/4a9aa54e-fbce-4867-bc79-eb94649f23c4)
 ### 1.3.3 管理員業務活動圖
 <br />
+
 ![管理員業務 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/912de2d5-ee33-4bbe-8848-00a70f5a1220)
+<br />
+
 # 第二章 需求分析
 
 ## 2.1 系統用例建模（根據對1.2的分析進行系統用例建模）
@@ -44,53 +49,64 @@
 ### 2.1.3 用例關係
 正在上傳，重新上傳取消
 <br />
+
 ![用例關係 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/a60e851d-4017-46bd-9bd0-02f780ea1c1e)
 
 ## 2.2用例規約說明
 
 表2-1 "進入停車場"用例規約
 <br />
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b3bec189-6759-4835-ad99-2d9672dcad89)
 
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b3bec189-6759-4835-ad99-2d9672dcad89)
+<br />
 
 表2-2 "進入停車場"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aba58e87-4a1b-48b2-b5a8-c72efd2da4e7)
-
+<br />
 
 表2-3 "支付費用"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/38c6dce9-8046-4c70-9e49-4e734fe4cee7)
-
+<br />
 
 表2-4 "離開停車場"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/144a6fff-ee7c-4331-bfec-3b933247d3d6)
-
+<br />
 
 表2-5 "登陸"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/88bd0bd2-b3dd-4cd5-904f-85c6a85e15a4)
-
+<br />
 
 表2-6 "查看車輛信息"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/ac305945-b7bb-45c5-ad76-14412f4090e1)
-
+<br />
 
 表2-7 "查詢車輛信息"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/42c364a7-7db9-4c7a-8699-5db09793a9b9)
-
+<br />
 
 表2-8 "導入車輛信息"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/1cc4e714-6e35-4f6a-b994-71ef5835ca0e)
-
+<br />
 
 表2-9 "刪除車輛信息"用例規約
+
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b20fce7c-d261-4dbf-b4fe-59a8658bc947)
+<br />
 
 # 第三章 面向對象分析
 
@@ -98,16 +114,22 @@
 
 ## 3.1用例實現
 使用順序圖，按B-C-E架構實現每一個用例
+
 <br />
 ![用例關係 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/e1764855-3794-4c83-8c18-b0b992bf935b)
+<br />
 
 圖3-1登陸時序圖
+
 <br />
 ![登陆时序图 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/39553bc0-6377-464c-a5bc-d7e54e2c5cb6)
+<br />
 
 圖3-2刪除車輛信息時序圖
+
 <br />
 ![刪除車輛訊息時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/cd0fe65e-c41b-48d5-ab78-6b69ada16899)
+<br />
 
 圖3-3添加車輛信息時序圖
 <br />
