@@ -21,9 +21,10 @@
 
 ### 1.3.2 車主業務活動圖
 
+![車主業務 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/4a9aa54e-fbce-4867-bc79-eb94649f23c4)
 ### 1.3.3 管理員業務活動圖
 
-
+![管理員業務 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/912de2d5-ee33-4bbe-8848-00a70f5a1220)
 # 第二章 需求分析
 
 ## 2.1 系統用例建模（根據對1.2的分析進行系統用例建模）
@@ -41,8 +42,9 @@
 2)管理員輸入正確的帳號和密碼登入系統，管理車輛進出的信息，包括車牌號、進出時間、停車費用。
 
 ### 2.1.3 用例關係
-
 正在上傳，重新上傳取消
+
+![用例關係 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/a60e851d-4017-46bd-9bd0-02f780ea1c1e)
 
 ## 2.2用例規約說明
 
@@ -51,6 +53,7 @@
 
 
 表2-2 "進入停車場"用例規約
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aba58e87-4a1b-48b2-b5a8-c72efd2da4e7)
 
 
@@ -87,20 +90,25 @@
 
 ## 3.1用例實現
 使用順序圖，按B-C-E架構實現每一個用例
+![用例關係 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/e1764855-3794-4c83-8c18-b0b992bf935b)
 
 圖3-1登陸時序圖
 
+![登陆时序图 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/39553bc0-6377-464c-a5bc-d7e54e2c5cb6)
+
 圖3-2刪除車輛信息時序圖
+![刪除車輛訊息時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/cd0fe65e-c41b-48d5-ab78-6b69ada16899)
 
 圖3-3添加車輛信息時序圖
 
 圖3-5查找車輛信息時序圖
 
 圖3-6查看車輛信息時序圖
+![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/561a3263-580d-4ed1-a2eb-61541ef4c180)
 
 ## 3.2分析類模型
 建立系統的分析類圖，為每個類分配職責、屬性，及對類之間的關西建模
-
+![分析類模型 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/26256ab0-32fc-4e26-974d-57c8d0c60f6e)
 # 第四章 面相對象設計
 
 ## 4.1數據庫設計
