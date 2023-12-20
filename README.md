@@ -47,7 +47,6 @@
 ![用例關係 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/a60e851d-4017-46bd-9bd0-02f780ea1c1e)
 
 ## 2.2用例規約說明
-<br />
 
 表2-1 "進入停車場"用例規約
 <br />
