@@ -309,7 +309,7 @@ lookCar() - 查看車輛信息。
 本章捷主要介紹了對停車場管理系統進行功能測試的必要性和測試結果，針對當前停車管理系統設系了一系列的功能測試用例。通過系統測試使系統更能府和預期要求，並能檢測和修復一些開發過程中的bug。
 
 
-# 第七章 Source code
+# 第七章 停車場管理系統
 
 （一）汽車、停車場、便道結構體的實現：
 
@@ -512,5 +512,6 @@ void showSidewalk(sidewalkQueue* sq)
 }
 
 ```
-
+# 參考資料
+[停車場管理系統](https://blog.csdn.net/weixin_46970264/article/details/106645869?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170307128616800186595925%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170307128616800186595925&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2%7Eall%7Etop_positive%7Edefault-1-106645869-null-null.142&fbclid=IwAR0Cme_ilQoYYEvXV7_OQ0DAC0rzODPajblqPRtjzWnnwOOOoDgC9w6ggWg)
 
