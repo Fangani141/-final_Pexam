@@ -62,49 +62,49 @@
 
 表2-2 "進入停車場"用例規約
 
-<br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aba58e87-4a1b-48b2-b5a8-c72efd2da4e7)
+
 <br />
 
 表2-3 "支付費用"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/38c6dce9-8046-4c70-9e49-4e734fe4cee7)
 <br />
 
 表2-4 "離開停車場"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/144a6fff-ee7c-4331-bfec-3b933247d3d6)
 <br />
 
 表2-5 "登陸"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/88bd0bd2-b3dd-4cd5-904f-85c6a85e15a4)
 <br />
 
 表2-6 "查看車輛信息"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/ac305945-b7bb-45c5-ad76-14412f4090e1)
 <br />
 
 表2-7 "查詢車輛信息"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/42c364a7-7db9-4c7a-8699-5db09793a9b9)
 <br />
 
 表2-8 "導入車輛信息"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/1cc4e714-6e35-4f6a-b994-71ef5835ca0e)
 <br />
 
 表2-9 "刪除車輛信息"用例規約
 
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b20fce7c-d261-4dbf-b4fe-59a8658bc947)
 <br />
 
@@ -115,19 +115,19 @@
 ## 3.1用例實現
 使用順序圖，按B-C-E架構實現每一個用例
 
-<br />
+
 ![用例關係 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/e1764855-3794-4c83-8c18-b0b992bf935b)
 <br />
 
 圖3-1登陸時序圖
 
-<br />
+
 ![登陆时序图 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/39553bc0-6377-464c-a5bc-d7e54e2c5cb6)
 <br />
 
 圖3-2刪除車輛信息時序圖
 
-<br />
+
 ![刪除車輛訊息時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/cd0fe65e-c41b-48d5-ab78-6b69ada16899)
 <br />
 
@@ -138,8 +138,9 @@
 <br />
 
 圖3-6查看車輛信息時序圖
-<br />
+
 ![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/561a3263-580d-4ed1-a2eb-61541ef4c180)
+<br />
 
 ## 3.2分析類模型
 建立系統的分析類圖，為每個類分配職責、屬性，及對類之間的關西建模
@@ -152,14 +153,17 @@
 ## 4.1數據庫設計
 數據庫結構
 1. 車輛信息表
-<br />
+   
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b805f92e-2982-40bf-8961-67f962bc2f6d)
+<br />
 
   表3.5車輛信息表
 
 2. 管理員信息表
-<br />
+
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b09ad690-ca17-4e2c-9ba9-875d41701b20)
+<br />
 
   表4.1管理員信息表
 
@@ -262,29 +266,29 @@ lookCar() - 查看車輛信息。
 ## 6.4 用例測試
 
 ### 6.4.1 登錄用例測試
-<br />
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/8a8badb2-fa8b-405e-98b6-8ad473e782fb)
 
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/8a8badb2-fa8b-405e-98b6-8ad473e782fb)
+<br />
 
 ### 6.4.2添加信息用例測試
-<br />
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aeb5487d-3c2f-4b27-ac65-4d816d018bb1)
 
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aeb5487d-3c2f-4b27-ac65-4d816d018bb1)
+<br />
 
 ### 6.4.3查詢信息用例測試
-<br />
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/01a1ed75-6c0d-43be-89c1-f02eec970eb9)
 
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/01a1ed75-6c0d-43be-89c1-f02eec970eb9)
+<br />
 
 ### 6.4.4瀏覽信息用例測試
-<br />
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/adca12aa-83e0-46b1-8f01-de12d6a0aa26)
 
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/adca12aa-83e0-46b1-8f01-de12d6a0aa26)
+<br />
 
 ### 6.4.5刪除信息用例測試
-<br />
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/1f947f98-fa16-4fa2-abe5-40627700efde)
 
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/1f947f98-fa16-4fa2-abe5-40627700efde)
+<br />
 
 # 6.5本章小節
 本章捷主要介紹了對停車場管理系統進行功能測試的必要性和測試結果，針對當前停車管理系統設系了一系列的功能測試用例。通過系統測試使系統更能府和預期要求，並能檢測和修復一些開發過程中的bug。
