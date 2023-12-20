@@ -119,32 +119,45 @@
 ![登陆时序图 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/3eecd287-f584-46b1-a127-c00c1af1b60b)
 <br />
 
-圖3-1登陸時序圖
-
 
 ![刪除車輛訊息時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/cd0fe65e-c41b-48d5-ab78-6b69ada16899)
 <br />
 
-圖3-2刪除車輛信息時序圖
+圖3-1登陸時序圖
+
+
 
 
 ![添加車輛訊息時序圖 drawio (1)](https://github.com/Fangani141/-final_Pexam/assets/91513082/1b2034c6-74bc-40e2-ac7f-bee3badddcd5)
 <br />
 
-圖3-3添加車輛信息時序圖
-![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/62000962-59c4-42e9-a6a9-d80bbd4f9e7a)
+圖3-2刪除車輛信息時序圖
 
+
+
+![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/62000962-59c4-42e9-a6a9-d80bbd4f9e7a)
 <br />
 
-圖3-5查找車輛信息時序圖
+圖3-3添加車輛信息時序圖
+
+
+
+
 
 ![查看車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/eeb2dcae-6893-477f-8e2b-f277d3013a2b)
 <br />
 
-圖3-6查看車輛信息時序圖
+圖3-5查找車輛信息時序圖
+
+
+
 
 ![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/561a3263-580d-4ed1-a2eb-61541ef4c180)
 <br />
+
+圖3-6查看車輛信息時序圖
+
+
 
 ## 3.2分析類模型
 建立系統的分析類圖，為每個類分配職責、屬性，及對類之間的關西建模
