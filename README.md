@@ -210,16 +210,20 @@ lookCar() - 查看車輛信息。
 
 
 ### 6.4.2添加信息用例測試
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/90801287-0f1a-466d-9f50-d639837ccc03)
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/aeb5487d-3c2f-4b27-ac65-4d816d018bb1)
+
 
 ### 6.4.3查詢信息用例測試
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/13ba07c5-29d5-43f9-a752-368df319ba77)
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/01a1ed75-6c0d-43be-89c1-f02eec970eb9)
+
 
 ### 6.4.4瀏覽信息用例測試
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/d7cb3176-9fef-4d71-8d25-b77dfd03455c)
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/adca12aa-83e0-46b1-8f01-de12d6a0aa26)
+
 
 ### 6.4.5刪除信息用例測試
-![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/af857ed5-de54-481e-8992-badbce9520ce)
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/1f947f98-fa16-4fa2-abe5-40627700efde)
+
 
 # 6.5本章小節
 本章捷主要介紹了對停車場管理系統進行功能測試的必要性和測試結果，針對當前停車管理系統設系了一系列的功能測試用例。通過系統測試使系統更能府和預期要求，並能檢測和修復一些開發過程中的bug。
