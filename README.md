@@ -16,4 +16,5 @@
 1.3業務模型
 
 13.1業務模型
+
 ![IMAGE](https://github.com/Fangani141/-final_Pexam/blob/main/other/%E6%A5%AD%E5%8B%99%E7%AE%A1%E7%90%86.drawio.png)
