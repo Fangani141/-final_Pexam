@@ -128,31 +128,29 @@
 
 
 
-![添加車輛訊息時序圖 drawio (1)](https://github.com/Fangani141/-final_Pexam/assets/91513082/1b2034c6-74bc-40e2-ac7f-bee3badddcd5)
-<br />
+
 
 圖3-2刪除車輛信息時序圖
 
 
-
-![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/62000962-59c4-42e9-a6a9-d80bbd4f9e7a)
+![添加車輛訊息時序圖 drawio (1)](https://github.com/Fangani141/-final_Pexam/assets/91513082/1b2034c6-74bc-40e2-ac7f-bee3badddcd5)
 <br />
+
 
 圖3-3添加車輛信息時序圖
 
 
 
 
-
-![查看車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/eeb2dcae-6893-477f-8e2b-f277d3013a2b)
+![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/62000962-59c4-42e9-a6a9-d80bbd4f9e7a)
 <br />
+
 
 圖3-5查找車輛信息時序圖
 
 
 
-
-![查找車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/561a3263-580d-4ed1-a2eb-61541ef4c180)
+![查看車輛資訊時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/eeb2dcae-6893-477f-8e2b-f277d3013a2b)
 <br />
 
 圖3-6查看車輛信息時序圖
