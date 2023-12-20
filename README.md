@@ -309,4 +309,208 @@ lookCar() - 查看車輛信息。
 本章捷主要介紹了對停車場管理系統進行功能測試的必要性和測試結果，針對當前停車管理系統設系了一系列的功能測試用例。通過系統測試使系統更能府和預期要求，並能檢測和修復一些開發過程中的bug。
 
 
+# 第七章 Source code
+
+（一）汽車、停車場、便道結構體的實現：
+
+1. 汽車資訊被封裝成一個結構體，包括車牌號碼、入場時間，而入場時間的型別是time_t，用來記錄時間戳。
+2. 停車場與便道被分別封裝為順序棧和鏈式隊列。
+
+```
+typedef struct Car
+{
+	char plateNumber[50];   //汽车车牌
+	time_t approachTime;  //进如停车场时间
+}Car;
+
+//停车场（顺序栈）
+typedef struct parkStack
+{
+	Car park[MAX];  //停车场的车位
+	int top;        //栈指针
+}parkStack;
+
+//便道车位结点
+typedef struct sidewalkNode
+{
+	Car position;   //数据域：便道中的一个车位
+	struct sidewalkNode* next;  //指针域：指向下一个结点
+}sidewalkNode;
+
+//便道（链式队列）
+typedef struct sidewalkQueue
+{
+	sidewalkNode* front;  //头指针
+	sidewalkNode* rear;   //尾指针
+}sidewalkQueue;
+```
+
+（二）汽車進入停車場：
+
+汽車進入停車場的函數設計思路如下：
+
+1. 進入停車場需要輸入車牌並保存。
+2. 檢查停車場是否已滿，若尚未滿則繼續停車。保存汽車進入停車場的時間戳，並輸出汽車進入停車場的當前時間以及停在哪個車位。若停車場已滿，則將車輛停放到便道上，並輸入車輛停放在哪個便道。
+
+```
+//停车函数
+void approach(parkStack* p, sidewalkQueue* sq)
+{
+	char number[50] = { 0 };
+	printf("请输入车牌：");
+	scanf("%s", number);
+	if (!isFull(p)) //停车场是否满
+	{
+		//车辆停车
+		printf("[开始停车]\n");
+		strcpy(p->park[++p->top].plateNumber, number); //存储车牌
+		time(&p->park[p->top].approachTime); //获取当前停车时间戳
+		//ctime( )函数可以将时间戳转成人类可以直接看的懂的时间格式，如：The time is Fri Apr 29 12:25:12 1994
+		printf("当前时间：%s", ctime(&p->park[p->top].approachTime));
+		printf("车牌为%s的车停放在停车场%d号车位\n", p->park[p->top].plateNumber, p->top + 1);
+		printf("[停车结束]\n");
+	}
+	else
+	{
+		//只能停在便道等待
+		sidewalkNode* tmp = (sidewalkNode*)malloc(sizeof(sidewalkNode)); //为新来的车辆开辟一个空间
+		if (tmp != NULL)
+		{
+			strcpy(tmp->position.plateNumber, number); //存放车牌
+			tmp->next = NULL;
+			sq->rear->next = tmp; //紧跟在便道中的车辆之后，即链接在已有结点之后
+			sq->rear = tmp;  //修改队尾指针
+		}
+		printf("停车场已满，车辆只能停放在便道等候！\n");
+		int count = 0;
+		sidewalkNode* p = sq->front->next;
+		while (p != NULL)
+		{
+			count++;
+			p = p->next;
+		}
+		printf("车牌为%s的车停放在便道%d号车位\n", sq->rear->position.plateNumber, count);
+	}
+}
+
+```
+（三）汽車離開停車場：
+
+汽車離開停車場的函數設計思路如下：
+
+1. 輸入欲離開的汽車車牌。
+2. 檢查停車場是否有該車輛，若有，則將在該車輛後進入的汽車暫時存入輔助棧中，讓該車輛離開。離開時，輸出離開的車輛、離開時間以及應繳納的停車費。若沒有，則輸出提示訊息。
+3. 汽車離開後，將輔助棧中的汽車按照原先的次序回到停車場。
+3. 檢查便道中是否有汽車，若有，則讓最先進入便道的車輛（隊頭元素）進入停車場，記錄進入停車場時的時間戳，並輸出汽車進入停車場的當前時間以及停在哪個車位。若沒有，則不進行任何操作。
+
+```
+
+//离开函数
+void leave(parkStack* p, parkStack* ap, sidewalkQueue* sq)
+{
+	if (!isEmpty(p)) //检查停车场是否空
+	{
+		char number[50] = { 0 };
+		printf("请输入离开的车牌：");
+		scanf("%s", number);
+		int n = p->top;
+		int post = 0; //记录车辆停放的位置
+		while (n > -1)  //检查停车场是否有该车辆
+		{
+			if (!strcmp(p->park[n].plateNumber, number))
+			{
+				post = n;
+				break;
+			}
+			n--;
+		}
+		if (n == -1)
+		{
+			printf("停车场没有该车辆！\n");
+		}
+		else
+		{
+			Car tmpCar;
+			time_t timer;
+			while (p->top > post) //在该车辆之后进来的车辆全部入辅助栈
+			{
+				pop(p, &tmpCar); //车辆离开停车场，相当于出栈，并将元素存入到tmpCar中
+				push(ap, &tmpCar); //车辆进入辅助栈，相当于入栈，将元素存入到辅助栈中
+			}
+			time(&timer); //获取时间戳
+			long long total = timer - p->park[p->top].approachTime; //车辆总共停了多少秒
+			long long h = total / 120; //计算停车多少小时
+			long long m = (total - h * 120) / 60; //计算停车多少分钟
+			long long s = total - h * 120 - m * 60; //计算停车多少秒
+			printf("当前时间：%s", ctime(&timer));
+			printf("车牌为%s的车辆离开停车场\n", p->park[p->top].plateNumber);
+			printf("车辆停车时间总计：%lld时%lld分钟%lld秒，应缴费%lld元\n", h, m, s, total);
+			p->top--; //该车辆出栈
+			while (!isEmpty(ap)) //让路的车辆按照原来的次序回到停车场
+			{
+				pop(ap, &tmpCar);
+				push(p, &tmpCar);
+			}
+			if (!isSidewalkEmpty(sq)) //如果便道不空，将便道中最前面的车入停车场，即队头元素出队
+			{		
+				sidewalkNode* s = NULL;
+				s = sq->front->next; //s指向要删除的结点
+				time(&s->position.approachTime); //记录汽车进入停车场时间
+				printf("当前时间为：%s", ctime(&s->position.approachTime));
+				printf("便道中车牌为%s的车辆进入停车场\n", s->position.plateNumber);
+				p->park[++p->top] = s->position; //结点入栈（相当于便道中的汽车进入停车场）
+				sq->front->next = s->next; //防止链队断裂
+				free(s); //释放结点空间
+			}
+		}
+	}
+	else
+	{
+		printf("停车场为空！\n");
+	}
+}
+
+```
+
+
+（四）顯示停車場資訊：
+
+1. 輸出目前停車場中每輛汽車的車牌號碼和所在車位。
+   
+```
+
+//显示停车场信息
+void showParking(parkStack* p)
+{
+	int i = 0;
+	printf("[开始显示信息]\n");
+	for (i = 0; i <= p->top; i++)
+	{
+		printf("车牌为%s的车辆停放在%d车位\n", p->park[i].plateNumber, i + 1);
+	}
+	printf("[显示结束，停车场目前停放了%d辆汽车]\n", p->top + 1);
+}
+
+```
+（五）顯示便道資訊：
+
+輸出目前便道中每輛汽車的車牌號碼和所在車位。
+
+```
+//显示便道信息
+void showSidewalk(sidewalkQueue* sq)
+{
+	printf("[开始显示信息]\n");
+	sidewalkNode* p = sq->front->next; //让p指向便道中第一辆汽车（队头元素）
+	int count = 0;
+	while (p != NULL)
+	{
+		printf("车牌为%s的车辆停放在%d车位\n", p->position.plateNumber, ++count);
+		p = p->next;
+	}
+	printf("[显示结束，便道目前停放了%d辆汽车]\n", count);
+}
+
+```
+
 
