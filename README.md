@@ -48,6 +48,8 @@
 
 ## 2.2用例規約說明
 <br />
+![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/db9c4259-efae-4648-b7be-cddbd4851071)
+
 表2-1 "進入停車場"用例規約
 <br />
 ![image](https://github.com/Fangani141/-final_Pexam/assets/91513082/b3bec189-6759-4835-ad99-2d9672dcad89)
