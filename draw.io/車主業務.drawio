@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2023-12-21T08:34:03.958Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="NxUwg7QINs4FGLDs8LQS" version="22.1.11" type="google">
+  <diagram name="第 1 页" id="evoU5WJgfH2CgUg1d2aO">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GB0AfXjYes_lCtySccoB-17" value="車主" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="50" width="310" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="123.34" y="40" width="46.66" height="46.66" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-24" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="113.33" y="120" width="66.67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-27" value="&lt;p style=&quot;line-height: 120%; font-size: 15px;&quot;&gt;無法辨識車牌&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="210" y="100" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.534;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="GB0AfXjYes_lCtySccoB-17" source="GB0AfXjYes_lCtySccoB-20" target="GB0AfXjYes_lCtySccoB-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="210" as="sourcePoint" />
+            <mxPoint x="100" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="101.67" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-31" value="入場" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="101.67" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.53;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="GB0AfXjYes_lCtySccoB-17" source="GB0AfXjYes_lCtySccoB-24" target="GB0AfXjYes_lCtySccoB-31" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110.00478000000015" y="233.20000000000005" as="sourcePoint" />
+            <mxPoint x="100" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-33" value="可識別車牌" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="60" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-36" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="118.34" y="290" width="66.67" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="GB0AfXjYes_lCtySccoB-17" source="GB0AfXjYes_lCtySccoB-31" target="GB0AfXjYes_lCtySccoB-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="210" as="sourcePoint" />
+            <mxPoint x="-70" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-43" value="&lt;p style=&quot;line-height: 120%; font-size: 15px;&quot;&gt;無法辨識車牌&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="201.67000000000002" y="270" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-47" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;離場&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="101.67" y="360" width="98.33" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.469;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="GB0AfXjYes_lCtySccoB-17" source="GB0AfXjYes_lCtySccoB-36" target="GB0AfXjYes_lCtySccoB-47" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-50" value="可識別車牌" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="50" y="330" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-52" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="118" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-53" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="GB0AfXjYes_lCtySccoB-17" vertex="1">
+          <mxGeometry x="133" y="445" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-21" value="管理員" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="50" width="280" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-25" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="GB0AfXjYes_lCtySccoB-21" vertex="1">
+          <mxGeometry x="80" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-28" value="錄入車輛進場&lt;br style=&quot;font-size: 15px;&quot;&gt;訊息" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-21" vertex="1">
+          <mxGeometry x="100" y="115" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-40" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="GB0AfXjYes_lCtySccoB-21" vertex="1">
+          <mxGeometry x="60" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-42" value="錄入車輛進離場&lt;br&gt;訊息" style="text;strokeColor=none;fillColor=none;html=1;fontSize=15;fontStyle=1;verticalAlign=middle;align=center;" parent="GB0AfXjYes_lCtySccoB-21" vertex="1">
+          <mxGeometry x="80" y="290" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.998;exitY=0.48;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GB0AfXjYes_lCtySccoB-24" target="GB0AfXjYes_lCtySccoB-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="260" as="sourcePoint" />
+            <mxPoint x="370" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.393;exitY=1.047;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GB0AfXjYes_lCtySccoB-25" target="GB0AfXjYes_lCtySccoB-31" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="260" as="sourcePoint" />
+            <mxPoint x="370" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.009;exitY=0.43;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GB0AfXjYes_lCtySccoB-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="460" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.611;exitY=1.032;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GB0AfXjYes_lCtySccoB-42" target="GB0AfXjYes_lCtySccoB-47" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="440" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB0AfXjYes_lCtySccoB-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="GB0AfXjYes_lCtySccoB-47" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="240" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
