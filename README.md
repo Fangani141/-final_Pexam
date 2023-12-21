@@ -120,10 +120,11 @@
 <br />
 
 
+圖3-1登陸時序圖
+
 ![刪除車輛訊息時序圖 drawio](https://github.com/Fangani141/-final_Pexam/assets/91513082/cd0fe65e-c41b-48d5-ab78-6b69ada16899)
 <br />
 
-圖3-1登陸時序圖
 
 
 
